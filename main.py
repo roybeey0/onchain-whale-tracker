@@ -60,7 +60,7 @@ DEMO_DATA_FILE = Path("demo_data.csv")
 # ──────────────────────────────────────────────
 
 def get_api_key() -> str:
-    key = os.environ.get("ETHERSCAN_API_KEY", "K6JY4PC1G8R55ENJNW8VD5NFNT241T2QBD")
+    key = os.environ.get("ETHERSCAN_API_KEY", "") # <--- put yout API key in "", ("ETHERSCAN_API_KEY", "YOUR_API_KEY")
     if key:
         console.print(f"[green]Done Using ETHERSCAN_API_KEY from environment[/green]")
         return key
